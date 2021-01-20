@@ -13,7 +13,7 @@ more_standard_parsers_list = list()
 
 more_standard_patterns_list = [i for i in settings.more_standard_patterns.splitlines() if i != '']
 
-directory_dictionary = dict()
+# directory_dictionary = dict()
 
 
 
@@ -111,7 +111,7 @@ def search_folder(path):
             not(directory.endswith('.exe')):
                 search_folder(path + "/" + directory)
 
-    print(directory_dictionary)
+    # print(directory_dictionary)
 
 
 

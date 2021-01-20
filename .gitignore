@@ -1,14 +1,6 @@
 # Settings
 settings
 settings.py
-containing_the_34_fields_from_obtExtractFieldsFromFeed.csv
-containing_the_34_fields_from_obtExtractFieldsFromFeed
-perl_parsers_inventory.csv
-perl_parsers_inventory
-perl_parsers.csv
-perl_parsers
-more_standard_parsers_list.csv
-more_standard_parsers_list
 
 # VSS
 .vscode

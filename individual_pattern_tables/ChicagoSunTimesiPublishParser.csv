@@ -1,35 +1,35 @@
 pattern,found
-"$xmlTag = ""UniqueID"";",True
-$strAdId,True
-"$xmlTag = ""PostDate"";",True
-$strDeathNoticeDate,True
-"$xmlTag = ""EndDate"";",True
-$strStopDate,True
-"$xmlTag = ""NoticeType"";",True
-$strNoticeType,True
-"$xmlTag = ""Email"";",True
-$strEmail,True
-"$xmlTag = ""Email"";",True
-$strEmail,True
-"$xmlTag = ""FuneralHome"";",True
-$strFuneralHome,True
-"$xmlTag = ""FuneralHomeAddress"";",True
-$strFuneralHomeAddr,True
-"$xmlTag = ""FuneralHomeCity"";",True
-$strFuneralHomeCity,True
-"$xmlTag = ""Notice"";",True
-$strDeathNotice,True
-"$xmlTag = ""fullname"";",True
-$strDeathNoticeName,True
-"$xmlTag = ""City"";",True
-$strCity,True
-"$xmlTag = ""State"";",True
-$strState,True
-"$xmlTag = ""DateBorn"";",True
-$strYearBorn,True
-"$xmlTag = ""DateDeceased"";",True
-$strYearDeceased,True
-"$xmlTag = ""Spotlight"";",True
-$intShowInSpotlight,True
-"$xmlTag = ""DateDeceased"";",True
-$strDateOfDeath,True
+"$xmlTag = ""UniqueID"";",yes
+$strAdId,yes
+"$xmlTag = ""PostDate"";",yes
+$strDeathNoticeDate,yes
+"$xmlTag = ""EndDate"";",yes
+$strStopDate,yes
+"$xmlTag = ""NoticeType"";",yes
+$strNoticeType,yes
+"$xmlTag = ""Email"";",yes
+$strEmail,yes
+"$xmlTag = ""Email"";",yes
+$strEmail,yes
+"$xmlTag = ""FuneralHome"";",yes
+$strFuneralHome,yes
+"$xmlTag = ""FuneralHomeAddress"";",yes
+$strFuneralHomeAddr,yes
+"$xmlTag = ""FuneralHomeCity"";",yes
+$strFuneralHomeCity,yes
+"$xmlTag = ""Notice"";",yes
+$strDeathNotice,yes
+"$xmlTag = ""fullname"";",yes
+$strDeathNoticeName,yes
+"$xmlTag = ""City"";",yes
+$strCity,yes
+"$xmlTag = ""State"";",yes
+$strState,yes
+"$xmlTag = ""DateBorn"";",yes
+$strYearBorn,yes
+"$xmlTag = ""DateDeceased"";",yes
+$strYearDeceased,yes
+"$xmlTag = ""Spotlight"";",yes
+$intShowInSpotlight,yes
+"$xmlTag = ""DateDeceased"";",yes
+$strDateOfDeath,yes

@@ -1,35 +1,35 @@
 pattern,found
-"$xmlTag = ""UniqueID"";",False
-$strAdId,True
-"$xmlTag = ""PostDate"";",False
-$strDeathNoticeDate,False
-"$xmlTag = ""EndDate"";",False
-$strStopDate,False
-"$xmlTag = ""NoticeType"";",False
-$strNoticeType,True
-"$xmlTag = ""Email"";",False
-$strEmail,True
-"$xmlTag = ""Email"";",False
-$strEmail,True
-"$xmlTag = ""FuneralHome"";",False
-$strFuneralHome,False
-"$xmlTag = ""FuneralHomeAddress"";",False
-$strFuneralHomeAddr,False
-"$xmlTag = ""FuneralHomeCity"";",False
-$strFuneralHomeCity,False
-"$xmlTag = ""Notice"";",False
-$strDeathNotice,False
-"$xmlTag = ""fullname"";",False
-$strDeathNoticeName,False
-"$xmlTag = ""City"";",False
-$strCity,True
-"$xmlTag = ""State"";",False
-$strState,True
-"$xmlTag = ""DateBorn"";",False
-$strYearBorn,False
-"$xmlTag = ""DateDeceased"";",False
-$strYearDeceased,False
-"$xmlTag = ""Spotlight"";",False
-$intShowInSpotlight,False
-"$xmlTag = ""DateDeceased"";",False
-$strDateOfDeath,False
+"$xmlTag = ""UniqueID"";",no
+$strAdId,yes
+"$xmlTag = ""PostDate"";",no
+$strDeathNoticeDate,no
+"$xmlTag = ""EndDate"";",no
+$strStopDate,no
+"$xmlTag = ""NoticeType"";",no
+$strNoticeType,yes
+"$xmlTag = ""Email"";",no
+$strEmail,yes
+"$xmlTag = ""Email"";",no
+$strEmail,yes
+"$xmlTag = ""FuneralHome"";",no
+$strFuneralHome,no
+"$xmlTag = ""FuneralHomeAddress"";",no
+$strFuneralHomeAddr,no
+"$xmlTag = ""FuneralHomeCity"";",no
+$strFuneralHomeCity,no
+"$xmlTag = ""Notice"";",no
+$strDeathNotice,no
+"$xmlTag = ""fullname"";",no
+$strDeathNoticeName,no
+"$xmlTag = ""City"";",no
+$strCity,yes
+"$xmlTag = ""State"";",no
+$strState,yes
+"$xmlTag = ""DateBorn"";",no
+$strYearBorn,no
+"$xmlTag = ""DateDeceased"";",no
+$strYearDeceased,no
+"$xmlTag = ""Spotlight"";",no
+$intShowInSpotlight,no
+"$xmlTag = ""DateDeceased"";",no
+$strDateOfDeath,no

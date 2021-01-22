@@ -2,6 +2,9 @@
 settings
 settings.py
 
+# TEST_parser.pl
+TEST_parser.pl
+
 # VSS
 .vscode
 .vscode/*

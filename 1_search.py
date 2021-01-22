@@ -42,15 +42,13 @@ def change_directory():
      thus piercing thru entire file tree
     '''
 
-    global more_standard_patterns_list
-
     path = settings.PARSERS_PATH
 
-    search_folder(path)
+    search_folder_for_all_standard_patterns(path)
 
 
 
-def search_folder(path):
+def search_folder_for_all_standard_patterns(path):
     '''
      performs search and appends hits to "contains"
     '''
@@ -65,33 +63,13 @@ def search_folder(path):
                     perl_file = open(path + "/" + directory, "r")
                     perl_file_reader = perl_file.read()
                     if all(p in perl_file_reader for p in more_standard_patterns_list):
-                        contains.append(directory)
-                        hits = open(f"containing_the_{len(more_standard_patterns_list)}_fields_from_obtExtractFieldsFromFeed.csv", "a+")
+                        hits = open(f"parsers_containing_the_{len(more_standard_patterns_list)}_fields_from_obtExtractFieldsFromFeed.csv", "a+")
                         hits.write("%s\n" % directory)
                         hits.close()
                 except:
                     pass
 
-    # for directory in directories:
-    #     if directory.endswith(".pl"):
-    #         if directory in more_standard_parsers_list:
-    #             try:
-    #                 perl_file = open(path + "/" + directory, "r")
-    #                 perl_file_reader = perl_file.read()
-    #                 directory_dictionary['name'] = directory
-    #                 for pattern in more_standard_patterns_list:
-    #                     if pattern in perl_file_reader:
-    #                         directory_dictionary[pattern] = True
-    #                     else:
-    #                         directory_dictionary[pattern] = False
-                    
-    #                     more_standard_patterns_list.remove(pattern)
-                    
-    #             except:
-    #                 pass
-        
         elif "." not in directory.split(" "):
-            # Needs to catch vssver's
             # 15 exeptions
             if directory != "vssver2.scc" and\
             not(directory.endswith('.txt')) and\
@@ -109,9 +87,7 @@ def search_folder(path):
             not(directory.endswith('.doc')) and\
             not(directory.endswith('.bat')) and\
             not(directory.endswith('.exe')):
-                search_folder(path + "/" + directory)
-
-    # print(directory_dictionary)
+                search_folder_for_all_standard_patterns(path + "/" + directory)
 
 
 

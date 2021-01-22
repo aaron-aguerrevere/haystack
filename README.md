@@ -26,8 +26,9 @@ Currently:
 - `inventory.py` counts directories, files, provides totals & filters newer parsers
 - `find_patterns.py` identifies elements that are in ipub and not older parsers
 - `search.py` searches all Parsers to see if patterns are found in them
-- `verify` checks if two parsers within the list of hits are the exact same
-- `last_modified` checks for "last modified" date of each file in path
+- `verify.py` checks if two parsers within the list of hits are the exact same
+- `last_modified.py` checks for "last modified" date of each file in path
+- `which.py` reads one specified Perl parsers and checks which "more standard" patterns are contained in it, then creates a `csv` file with the result
 
 ### NEXT STEPS
 

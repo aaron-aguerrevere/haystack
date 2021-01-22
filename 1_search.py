@@ -56,34 +56,35 @@ def search_folder_for_all_standard_patterns(path):
 
     directories = os.listdir(path)
 
-    for directory in directories:
-        if directory.endswith(".pl"):
-            if directory in more_standard_parsers_list:
-                try:
-                    perl_file = open(path + "/" + directory, "r")
-                    perl_file_reader = perl_file.read()
-                    if all(p in perl_file_reader for p in more_standard_patterns_list):
-                        hits = open(os.path.join(destination_path, f"parsers_containing_the_{len(more_standard_patterns_list)}_fields_from_obtExtractFieldsFromFeed.csv"), "a+")
-                        hits.write("%s\n" % directory)
-                        hits.close()
-                except:
-                    pass
-
     # for directory in directories:
     #     if directory.endswith(".pl"):
     #         if directory in more_standard_parsers_list:
     #             try:
     #                 perl_file = open(path + "/" + directory, "r")
     #                 perl_file_reader = perl_file.read()
-
-    #                 with open(os.path.join(destination_path, f'{directory}.csv'), 'w', newline='') as csvfile:
-    #                     writer = csv.DictWriter(csvfile, fieldnames=['pattern', 'found'])
-    #                     writer.writeheader()
-
-    #                     for pattern in more_standard_patterns_list:
-    #                         writer.writerows([{'pattern': pattern, 'found': pattern in reader}])
+    #                 if all(p in perl_file_reader for p in more_standard_patterns_list):
+    #                     hits = open(os.path.join(destination_path, f"parsers_containing_the_{len(more_standard_patterns_list)}_fields_from_obtExtractFieldsFromFeed.csv"), "a+")
+    #                     hits.write("%s\n" % directory)
+    #                     hits.close()
     #             except:
     #                 pass
+
+    for directory in directories:
+        if directory.endswith(".pl"):
+            if directory in more_standard_parsers_list:
+                try:
+                    perl_file = open(path + "/" + directory, "r")
+                    perl_file_reader = perl_file.read()
+
+                    with open(os.path.join(destination_path, f'{directory[:-3]}.csv'), 'w', newline='') as csvfile:
+                        writer = csv.DictWriter(csvfile, fieldnames=['pattern', 'found'])
+                        writer.writeheader()
+                    
+                        for p in more_standard_patterns_list:
+                            writer.writerows([{'pattern': p, 'found': p in perl_file_reader}])
+
+                except:
+                    pass
 
         elif "." not in directory.split(" "):
             # 15 exeptions

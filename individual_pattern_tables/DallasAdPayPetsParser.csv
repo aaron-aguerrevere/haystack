@@ -1,0 +1,35 @@
+pattern,found
+"$xmlTag = ""UniqueID"";",False
+$strAdId,True
+"$xmlTag = ""PostDate"";",False
+$strDeathNoticeDate,False
+"$xmlTag = ""EndDate"";",False
+$strStopDate,False
+"$xmlTag = ""NoticeType"";",False
+$strNoticeType,True
+"$xmlTag = ""Email"";",False
+$strEmail,True
+"$xmlTag = ""Email"";",False
+$strEmail,True
+"$xmlTag = ""FuneralHome"";",False
+$strFuneralHome,False
+"$xmlTag = ""FuneralHomeAddress"";",False
+$strFuneralHomeAddr,False
+"$xmlTag = ""FuneralHomeCity"";",False
+$strFuneralHomeCity,False
+"$xmlTag = ""Notice"";",False
+$strDeathNotice,False
+"$xmlTag = ""fullname"";",False
+$strDeathNoticeName,False
+"$xmlTag = ""City"";",False
+$strCity,True
+"$xmlTag = ""State"";",False
+$strState,True
+"$xmlTag = ""DateBorn"";",False
+$strYearBorn,False
+"$xmlTag = ""DateDeceased"";",False
+$strYearDeceased,False
+"$xmlTag = ""Spotlight"";",False
+$intShowInSpotlight,False
+"$xmlTag = ""DateDeceased"";",False
+$strDateOfDeath,False

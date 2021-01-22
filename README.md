@@ -23,10 +23,10 @@ Script:
 
 Main (yet to be refactored): 
 
-- `0_inventory.py` counts directories, files, provides totals & filters newer parsers
+- `0_inventory.py` counts directories, files, provides totals & filters newer parsers that follow specif "more recent" naming conventions
 - `1_search.py` searches all Parsers to see if patterns are found in them
 
-Auxilliary (used for proof of concept, later integrated into "Main"):
+Auxiliary (used for proof of concept, later integrated into "Main"):
 
 - `verify.py` checks if two parsers within the list of hits are the exact same
 - `last_modified.py` checks for "last modified" date of each file in path

@@ -82,7 +82,7 @@ def create_json(path_to_parsers):
        'AdPerfect' in d['name'] or\
         'AdPay' in d['name']):
         more_standard_parsers_list.append(d['name'])
-        print(d['name'])
+        # print(d['name'])
 
     return d
 

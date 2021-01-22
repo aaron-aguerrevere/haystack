@@ -4,6 +4,7 @@ import csv
 import os
 
 
+
 ###--- GLOBAL VARIABLES ---###
 parser_path = settings.PARSER_PATH
 
@@ -12,8 +13,8 @@ destination_path = settings.DESTINATION_PATH
 more_standard_patterns_list = [i for i in settings.more_standard_patterns.splitlines() if i != '']
 
 
-###--- FUNCTIONS ---###
 
+##--- FUNCTIONS ---###
 def create_csv_which_parsers_contain_which_patterns():
     with open('TEST_parser.pl', 'r', encoding="utf8") as parser:
         reader = parser.read()
@@ -24,6 +25,7 @@ def create_csv_which_parsers_contain_which_patterns():
 
         for pattern in more_standard_patterns_list:
             writer.writerows([{'pattern': pattern, 'found': pattern in reader}])
+
 
 
 ###--- DRIVER CODE ---###

@@ -13,7 +13,7 @@ more_standard_parsers_list = list()
 
 more_standard_patterns_list = [i for i in settings.more_standard_patterns.splitlines() if i != '']
 
-# directory_dictionary = dict()
+destination_path = settings.DESTINATION_PATH
 
 
 
@@ -52,7 +52,7 @@ def search_folder_for_all_standard_patterns(path):
     '''
      performs search and appends hits to "contains"
     '''
-    global contains, more_standard_parsers_list, more_standard_patterns_list, directory_dictionary
+    global contains, more_standard_parsers_list, more_standard_patterns_list, destination_path
 
     directories = os.listdir(path)
 
@@ -63,11 +63,27 @@ def search_folder_for_all_standard_patterns(path):
                     perl_file = open(path + "/" + directory, "r")
                     perl_file_reader = perl_file.read()
                     if all(p in perl_file_reader for p in more_standard_patterns_list):
-                        hits = open(f"parsers_containing_the_{len(more_standard_patterns_list)}_fields_from_obtExtractFieldsFromFeed.csv", "a+")
+                        hits = open(os.path.join(destination_path, f"parsers_containing_the_{len(more_standard_patterns_list)}_fields_from_obtExtractFieldsFromFeed.csv"), "a+")
                         hits.write("%s\n" % directory)
                         hits.close()
                 except:
                     pass
+
+    # for directory in directories:
+    #     if directory.endswith(".pl"):
+    #         if directory in more_standard_parsers_list:
+    #             try:
+    #                 perl_file = open(path + "/" + directory, "r")
+    #                 perl_file_reader = perl_file.read()
+
+    #                 with open(os.path.join(destination_path, f'{directory}.csv'), 'w', newline='') as csvfile:
+    #                     writer = csv.DictWriter(csvfile, fieldnames=['pattern', 'found'])
+    #                     writer.writeheader()
+
+    #                     for pattern in more_standard_patterns_list:
+    #                         writer.writerows([{'pattern': pattern, 'found': pattern in reader}])
+    #             except:
+    #                 pass
 
         elif "." not in directory.split(" "):
             # 15 exeptions

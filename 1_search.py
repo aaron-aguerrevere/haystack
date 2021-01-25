@@ -50,7 +50,8 @@ def change_directory():
 
 def search_folder_for_all_standard_patterns(path):
     '''
-     performs search and appends hits to "contains"
+     performs search of patterns in each parser in path,
+     and creates a csv file per parser showing which patterns are contained within
     '''
     global contains, more_standard_parsers_list, more_standard_patterns_list, destination_path
 
